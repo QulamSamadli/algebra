@@ -7,8 +7,10 @@ let cebr1 = document.getElementById(`cebr1`);
 let equal = document.getElementById(`equal`);
 let cem = document.getElementById(`cem`);
 let cavab = document.getElementById(`cavab`);
+let cavabla = document.getElementById(`cavabla`);
 
 easy.onclick = () => {
+  
   let random = Math.floor(Math.random() * 10);
   num1.innerHTML = random;
   let random1 = Math.floor((random + 30) / 2);
@@ -21,14 +23,16 @@ easy.onclick = () => {
   cavab.style.display = `block`;
   switch (cebr[cebrIndex]) {
     case `+`:
-      
-      console.log(random + random1);
-    break;
+      let a = random + random1;
+      console.log(a);
+      break;
     case `-`:
-     console.log( random - random1);
+      let b = random - random1;
+      console.log(b);
       break;
     case `*`:
-    console.log(  random * random1);
+      let c = random * random1;
+      console.log(c);
       break;
 
     default:
@@ -46,19 +50,15 @@ normal.onclick = () => {
 
   cebr1.innerHTML = cebr[cebrIndex];
 
-
-  
-
   switch (cebr[cebrIndex]) {
     case `+`:
-      
       console.log(random + random1);
-    break;
+      break;
     case `-`:
-     console.log( random - random1);
+      console.log(random - random1);
       break;
     case `*`:
-    console.log(  random * random1);
+      console.log(random * random1);
       break;
 
     default:
@@ -66,6 +66,7 @@ normal.onclick = () => {
   }
 };
 hard.onclick = () => {
+  
   let random = Math.floor(Math.random() * 100);
   num1.innerHTML = random;
   let random1 = Math.floor((random + 30) / 2);
@@ -76,17 +77,28 @@ hard.onclick = () => {
   cavab.style.display = `block`;
   switch (cebr[cebrIndex]) {
     case `+`:
-      
       console.log(random + random1);
-    break;
+      break;
     case `-`:
-     console.log( random - random1);
+      console.log(random - random1);
       break;
     case `*`:
-    console.log(  random * random1);
+      console.log(random * random1);
       break;
 
     default:
       break;
   }
+};
+
+cavabla.onclick = () => {
+  cavab == this.random + this.random1;
+  cavab == this.random * this.random1;
+  cavab == this.random - this.random1;
+  if (cavab.value === easy.onclick()) {
+    Swal.fire("halal olsun");
+  } else {
+    Swal.fire("halal olmasin");
+  }
+  
 };

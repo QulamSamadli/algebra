@@ -24,3 +24,12 @@ span{
     font-size: 20px;
     width: 60px;
   }
+  #cavabla{
+    height: 30px;
+  }
+
+
+  /* if(cavab===cavab.value){
+    Swal.fire('Any fool can use a computer')
+   }
+   else{Swal.fire('basqa vaxt gel')} */
