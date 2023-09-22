@@ -6,41 +6,87 @@ let num2 = document.getElementById(`num2`);
 let cebr1 = document.getElementById(`cebr1`);
 let equal = document.getElementById(`equal`);
 let cem = document.getElementById(`cem`);
+let cavab = document.getElementById(`cavab`);
 
 easy.onclick = () => {
   let random = Math.floor(Math.random() * 10);
   num1.innerHTML = random;
-  num2.innerHTML = Math.floor((random + 1) / 2);
+  let random1 = Math.floor((random + 30) / 2);
+  num2.innerHTML = random1;
   let cebr = [`+`, `-`, `*`];
   let cebrIndex = Math.floor(Math.random() * cebr.length);
 
   cebr1.innerHTML = cebr[cebrIndex];
-  console.log(cebrIndex);
 
-  console.log(random);
+  cavab.style.display = `block`;
+  switch (cebr[cebrIndex]) {
+    case `+`:
+      
+      console.log(random + random1);
+    break;
+    case `-`:
+     console.log( random - random1);
+      break;
+    case `*`:
+    console.log(  random * random1);
+      break;
+
+    default:
+      break;
+  }
 };
 normal.onclick = () => {
   let random = Math.floor(Math.random() * 100);
   num1.innerHTML = random;
-  num2.innerHTML = Math.floor((random + 20) / 2);
+  let random1 = Math.floor((random + 30) / 2);
+  num2.innerHTML = random1;
   let cebr = [`+`, `-`];
   let cebrIndex = Math.floor(Math.random() * cebr.length);
+  cavab.style.display = `block`;
 
   cebr1.innerHTML = cebr[cebrIndex];
-  console.log(cebrIndex);
 
-  console.log(random);
+
+  
+
+  switch (cebr[cebrIndex]) {
+    case `+`:
+      
+      console.log(random + random1);
+    break;
+    case `-`:
+     console.log( random - random1);
+      break;
+    case `*`:
+    console.log(  random * random1);
+      break;
+
+    default:
+      break;
+  }
 };
 hard.onclick = () => {
   let random = Math.floor(Math.random() * 100);
   num1.innerHTML = random;
-  num2.innerHTML = Math.floor((random + 30) / 2);
+  let random1 = Math.floor((random + 30) / 2);
+  num2.innerHTML = random1;
   let cebr = [`+`, `-`, `*`];
   let cebrIndex = Math.floor(Math.random() * cebr.length);
-
   cebr1.innerHTML = cebr[cebrIndex];
-  console.log(cebrIndex);
+  cavab.style.display = `block`;
+  switch (cebr[cebrIndex]) {
+    case `+`:
+      
+      console.log(random + random1);
+    break;
+    case `-`:
+     console.log( random - random1);
+      break;
+    case `*`:
+    console.log(  random * random1);
+      break;
 
-  console.log(random);
+    default:
+      break;
+  }
 };
-
